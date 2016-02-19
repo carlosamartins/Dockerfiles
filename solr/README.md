@@ -44,15 +44,6 @@ In the UI, find the "Core selector" popup menu and select the "gettingstarted" c
 
 To learn more about Solr, see the [Apache Solr Reference Guide](https://cwiki.apache.org/confluence/display/solr/Apache+Solr+Reference+Guide).
 
-## Distributed Solr
-
-You can also run a distributed Solr configuration.
-
-The recommended and most flexible way to do that is to use Docker networking.
-See the [Can I run ZooKeeper and Solr clusters under Docker](https://github.com/docker-solr/docker-solr/blob/master/Docker-FAQ.md#can-i-run-zookeeper-and-solr-clusters-under-docker) FAQ,
-and [this example](docs/docker-networking.md).
-
-You can also use legacy links, see the [Can I run ZooKeeper and Solr with Docker Links](Docker-FAQ.md#can-i-run-zookeeper-and-solr-clusters-under-docker) FAQ.
 
 # What are the differences between this image and library/solr?
 
