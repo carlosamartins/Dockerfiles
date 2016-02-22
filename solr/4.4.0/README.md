@@ -1,1 +1,1 @@
-C:/Users/carlos.martins/repositorio/Dockerfiles/solr/README.md
+../README.md
