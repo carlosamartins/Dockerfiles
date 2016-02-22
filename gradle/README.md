@@ -12,11 +12,9 @@ Learn more on [Gradle homepage](http://gradle.org/) and in the [Gradle Reference
 # How to use this Docker image
 
 To run a Gradle with Docker command:
-$HOME: Is your local directory.
-$TAG: Choose a TAG that you need. Ex: 2.11-jdk8
 
 ```console
-$ docker run --rm -v $HOME/.m2:/gradle/.m2 -v $HOME/myapp:/app carlosamartins/gradle:$TAG build
+$ docker run --rm -v $HOME/.m2:/gradle/.m2 -v $HOME/myapp:/app carlosamartins/gradle build
 ```
 
 # License
