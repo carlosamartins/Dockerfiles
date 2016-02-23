@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--       [`2.11-jdk8`, `latest` (*2.11/Dockerfile*)](https://github.com/carlosamartins/Dockerfiles/blob/master/jdk-8/2.11/Dockerfile)
+-       [`2.11-jdk8`, `latest` (*2.11/Dockerfile*)](https://github.com/carlosamartins/Dockerfiles/blob/master/gradle/jdk-8/2.11/Dockerfile)
 
 # What is Gradle?
 
