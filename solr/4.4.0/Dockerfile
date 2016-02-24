@@ -1,4 +1,4 @@
-FROM java:openjdk-8-jre
+FROM andreptb/oracle-java:8
 
 ENV SOLR_VERSION 4.4.0
 ENV SOLR solr-$SOLR_VERSION
