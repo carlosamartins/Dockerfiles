@@ -33,7 +33,8 @@ docker build -t docker-web.softplan.com.br/unj/app-name /path/Dockerfile
 docker run -it --env-file path/config.properties docker-web.softplan.com.br/unj/app-name
 ```
 
-* The config.properties can be a file that contains the env vars below:
+
+* The config.properties can be a file that contains the env vars as below:
 
 ```
 TZ=America/Sao_Paulo
