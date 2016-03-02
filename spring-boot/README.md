@@ -24,7 +24,7 @@ ENV FILE target/app.jar
 ENV ENTRYPOINT src/entrypoint.sh
 ```
 
-* The entrypoint can be anything. Does not forget to put "exec $@" on the final:
+* The entrypoint can be anything. Not forget to put "exec $@" on the final:
 
 ```
 #!/bin/bash
