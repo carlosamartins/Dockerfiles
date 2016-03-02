@@ -4,6 +4,8 @@
 
 Base image for apps [Spring Boot](http://projects.spring.io/spring-boot/).
 
+This image uses instruction [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild)
+
 ## What is Spring Boot?
 
 
@@ -14,11 +16,34 @@ Reference guide [here](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/r
 
 ## How to use this Docker image:
 
-* You need to create a child Dockerfile and indicate the jar/war path as "ENV". The "ENV" name must be "FILE":
+* You need to create a child Dockerfile and indicate the jar/war path as "ENV". The env var "FILE" is required. If you need an entrypoint you can create it but entrypoint is not required:
 
 ```
 FROM carlosamartins/spring-boot
 ENV FILE target/app.jar
+ENV ENTRYPOINT src/entrypoint.sh
+```
+
+* The entrypoint can be anything. Does not forget to put "exec $@" on the final:
+
+```
+#!/bin/bash
+
+function export_var() {
+  eval VAL=\$$2
+  if [ ! -z $VAL ]; then
+    if [ ! -z $3 ]; then
+      VAL=$3
+    fi
+    export $1=$VAL
+    echo "config per link: $1=$VAL"
+  fi
+}
+
+export_var URL_WEBSERVICE CONTAINER1_PORT_8080_TCP_ADDR "http://$URL_WEBSERVICE CONTAINER1_PORT_8080_TCP_ADDR:8080/servicows"
+export_var URL_ANOTHER_SERVICE CONTAINER2_PORT_8080_TCP_ADDR "http://$CONTAINER2_PORT_8080_TCP_ADDR:8080/services/Servico?wsdl"
+
+exec $@
 ```
 
 * Build app image:
