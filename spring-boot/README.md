@@ -1,6 +1,7 @@
 # Tags and links to `Dockerfile`
 
 -	[`jdk8-onbuilld`, `latest`, (*jdk8-onbuilld/Dockerfile*)](jdk-8/Dockerfile)
+-	[`8-alpine-onbuilld`, (*8-alpine-onbuilld/Dockerfile*)](alpine/jdk-8/Dockerfile)
 
 Base image for apps [Spring Boot](http://projects.spring.io/spring-boot/).
 

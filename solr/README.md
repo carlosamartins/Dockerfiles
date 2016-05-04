@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 -       [`4.4.0`, `latest` (*4.4/Dockerfile*)](https://github.com/carlosamartins/Dockerfiles/blob/master/4.4.0/Dockerfile)
+-       [`4.4.0-alpine`, (*alpine/4.4/Dockerfile*)](https://github.com/carlosamartins/Dockerfiles/blob/master/alpine/4.4.0/Dockerfile)
 
 For more information about this image and its history, please see [the relevant manifest file (`library/solr`)](https://github.com/docker-library/official-images/blob/master/library/solr). This image is updated via pull requests to [the `docker-solr/docker-solr` GitHub repo](https://github.com/docker-solr/docker-solr).
 
